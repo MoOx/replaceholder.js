@@ -1,0 +1,25 @@
+{
+  "name": "replaceholder.js",
+  "description": "It's a simple script that allow you to replace some placeholder by the content you want, when you want",
+  "version": "0.1.0",
+  "author": "Maxime Thirouin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-casper": "~0.1.1",
+    "grunt-notify": "~0.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MoOx/replaceholder.js.git"
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  }
+}

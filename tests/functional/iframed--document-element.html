@@ -1,0 +1,21 @@
+<!doctype html>
+<div
+	class="iframed shouldContainsIframe"
+	data-iframed--id="HacxWKjun24"
+	data-iframed--autoplay="0"
+	data-iframed--start="4s"
+	data-iframed--width="420"
+	data-iframed--height="315">
+	<div class="shouldBeReplaced"></div>
+</div>
+
+<script src="../../replaceholder.js"></script>
+<script>
+replaceholder('iframed', function(values) {
+	var ifr = document.createElement("iframe");
+	ifr.width = values.width;
+	ifr.height = values.height;
+	ifr.src = 'http://www.youtube.com/embed/' + values.id + '?autoplay=' + values.autoplay + '#t=' + values.start + '"';
+	return ifr;
+});
+</script>
