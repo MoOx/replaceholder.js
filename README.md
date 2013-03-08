@@ -1,4 +1,4 @@
-# Replaceholder.js
+# Replaceholder.js [![Build Status](https://travis-ci.org/MoOx/replaceholder.js.png)](https://travis-ci.org/MoOx/replaceholder.js)
 
 It's a simple script that allow you to replace some placeholder by the content you want, when you want.
 
@@ -50,3 +50,8 @@ Then, to run functionals tests
 To run unit tests (CapserJS 1.1 is required)
 
 	casperjs test tests/unit.js
+
+Or you can just run the Grunt task (require Node, NPM & grunt-cli)
+
+	npm install
+	grunt test
