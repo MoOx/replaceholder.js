@@ -65,11 +65,12 @@
 			}
 
 			if (typeof eventCallbacks !== undefined) {
-				for (eventName in eventCallbacks) {
-					eventName.split(' ').forEach(function(e) {
-						console.log('event registered: ' + e);
-						placeholder.addEventListener(e, eventCallbacks[eventName], false);
-					})
+				for (var eventName in eventCallbacks) {
+					var events = eventName.split(' ');
+					for (var e in events) {
+						console.log('event registered: ' + events[e]);
+						placeholder.addEventListener(events[e], eventCallbacks[eventName], false);
+					}
 				}
 			}
 		});
