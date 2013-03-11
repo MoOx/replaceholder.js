@@ -27,6 +27,13 @@ replaceholder('worldcompany_video', function(params) {
         src="http://worldcompany_video.com/watch?id=' + params.id + '"' +
         '">';
     }
+}, {
+	'mouseover': function(event) {
+
+	},
+	'touchstart': function(event) {
+
+	}
 });
 ```
 

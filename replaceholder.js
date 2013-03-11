@@ -66,8 +66,10 @@
 
 			if (typeof eventCallbacks !== undefined) {
 				for (eventName in eventCallbacks) {
-					console.log('event registered: ' + eventName);
-					placeholder.addEventListener(eventName, eventCallbacks[eventName], false);
+					eventName.split(' ').forEach(function(e) {
+						console.log('event registered: ' + e);
+						placeholder.addEventListener(e, eventCallbacks[eventName], false);
+					})
 				}
 			}
 		});
