@@ -1,7 +1,7 @@
 // Uses Node, AMD or browser globals to create a module.
 // https://github.com/umdjs/umd/blob/master/returnExportsGlobal.js
 
-(function (root, factory) {
+;(function (root, factory) {
 	if (typeof exports === 'object') {
 		// Node. Does not work with strict CommonJS, but
 		// only CommonJS-like enviroments that support module.exports,
