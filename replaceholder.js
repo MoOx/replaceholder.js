@@ -68,8 +68,11 @@
 				for (var eventName in eventCallbacks) {
 					var events = eventName.split(' ');
 					for (var e in events) {
-						console.log('event registered: ' + events[e]);
-						placeholder.addEventListener(events[e], eventCallbacks[eventName], false);
+						// just ensure that the events[e] is not a fucking polyfilled method
+						if (typeof events[e] === 'string') {
+							console.log('event registered: ' + events[e]);
+							placeholder.addEventListener(events[e], eventCallbacks[eventName], false);
+						}
 					}
 				}
 			}
