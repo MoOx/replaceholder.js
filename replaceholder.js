@@ -36,7 +36,7 @@
 		}
 
 		var attribNamePrefix = 'data-' + name + '--';
-		[].forEach.call(document.querySelectorAll('.' + name + ''), function(placeholder) {
+		[].forEach.call(document.getElementsByClassName(name + ''), function(placeholder) {
 			var values = {};
 			// retrieve placeholder.getAttribute('data-*');
 			for (var i = 0; i < placeholder.attributes.length; i++) {
